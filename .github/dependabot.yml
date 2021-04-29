@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: mix
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - task
+  - dependencies
+  - backlog-dependencies
+  ignore:
+  - dependency-name: ex_doc
+    versions:
+    - 0.24.1
